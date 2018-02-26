@@ -10,11 +10,11 @@ jobs:
       script: skip
       deploy: &heroku
         provider: heroku
-        app: fierce-forest-79870
+        app: limitless-cliffs-25024
         api_key: $HEROKU_AUTH_TOKEN
         on: sf-stages-demo
     - stage: test staging
-      script: 'curl https://fierce-forest-79870.herokuapp.com/'
+      script: 'curl https://limitless-cliffs-25024.herokuapp.com/'
     - stage: deploy to production
       script: /bin/true
       deploy:
